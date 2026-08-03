@@ -8,8 +8,7 @@
 
 ## 送審前必做
 
-1. **填入聯絡 Email**：`index.html` 中搜尋 `PLEASE_FILL_EMAIL`（共 2 處，
-   連結與顯示文字），改成實際對外聯絡信箱。隱私權政策必須提供聯絡方式。
+1. ~~**填入聯絡 Email**~~ ✅ 已填 `mizuhara@mshw.info`（`index.html`「十、聯絡我們」）。
 2. **開啟 GitHub Pages**：本 repo → **Settings** → **Pages** →
    Source 選 **Deploy from a branch**，Branch 選 **`main` / `(root)`** → Save。
    等一兩分鐘後即可取得網址：
