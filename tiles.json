@@ -8,6 +8,14 @@
     "放在這裡而不是 App 的主 repo：主 repo 是私有的，raw.githubusercontent.com 對所有人回 404。改完約 1 分鐘後用瀏覽器打開上面網址確認 JSON 合法。"
   ],
   "sources": [
+        {
+      "url": "https://api.maptiler.com/maps/streets-v4/256/{z}/{x}/{y}@2x.png?key=t7tHd4tHU6HyxDXKEu0P",
+      "probe": "https://api.maptiler.com/maps/streets-v4/256/16/54895/27298.png?key=t7tHd4tHU6HyxDXKEu0P",
+      "options": {
+        "maxZoom": 19,
+        "attribution": "<a href=\"https://www.maptiler.com/\"><img src=\"https://api.maptiler.com/resources/logo.svg\" alt=\"MapTiler\" style=\"height:12px;vertical-align:middle\"></a> <a href=\"https://www.maptiler.com/copyright/\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\">&copy; OpenStreetMap</a> contributors"
+      }
+    },
     {
       "url": "https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
       "probe": "https://basemaps.cartocdn.com/rastertiles/voyager/16/54895/27298.png",
