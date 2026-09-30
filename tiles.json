@@ -9,14 +9,6 @@
   ],
   "sources": [
     {
-      "url": "https://api.maptiler.com/maps/streets-v4/256/{z}/{x}/{y}@2x.png?key=YOUR_KEY",
-      "probe": "https://api.maptiler.com/maps/streets-v4/256/16/54895/27298.png?key=YOUR_KEY",
-      "options": {
-        "maxZoom": 19,
-        "attribution": "<a href=\"https://www.maptiler.com/\"><img src=\"https://api.maptiler.com/resources/logo.svg\" alt=\"MapTiler\" style=\"height:12px;vertical-align:middle\"></a> <a href=\"https://www.maptiler.com/copyright/\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\">&copy; OpenStreetMap</a> contributors"
-      }
-    },
-    {
       "url": "https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
       "probe": "https://basemaps.cartocdn.com/rastertiles/voyager/16/54895/27298.png",
       "options": {
