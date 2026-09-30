@@ -1,0 +1,37 @@
+{
+  "_comment": [
+    "「我的垃圾車」App 的底圖圖磚來源（由 App 於啟動時讀取：https://mshwinfo.github.io/Taiwan-TrashGo-Privacy/tiles.json，4 秒逾時，抓不到就用內建來源）。",
+    "圖磚供應商若封鎖我們或改政策，改這裡 push 到 main 即可讓所有使用者換源，不必重新送審。",
+    "規則：url 必須是 https 且含 {z}/{x}/{y}；probe 是單張圖磚網址，用來讀真正的 HTTP 狀態碼",
+    "（被封鎖時常見的情況是回 403 卻附一張有效的警告圖，只看圖片事件偵測不到）。",
+    "順序即失敗轉移順序，最多 4 筆。內容需與 map.js 的內建 TILE_SOURCES 保持一致。",
+    "放在這裡而不是 App 的主 repo：主 repo 是私有的，raw.githubusercontent.com 對所有人回 404。改完約 1 分鐘後用瀏覽器打開上面網址確認 JSON 合法。"
+  ],
+  "sources": [
+    {
+      "url": "https://api.maptiler.com/maps/streets-v4/256/{z}/{x}/{y}@2x.png?key=YOUR_KEY",
+      "probe": "https://api.maptiler.com/maps/streets-v4/256/16/54895/27298.png?key=YOUR_KEY",
+      "options": {
+        "maxZoom": 19,
+        "attribution": "<a href=\"https://www.maptiler.com/\"><img src=\"https://api.maptiler.com/resources/logo.svg\" alt=\"MapTiler\" style=\"height:12px;vertical-align:middle\"></a> <a href=\"https://www.maptiler.com/copyright/\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\">&copy; OpenStreetMap</a> contributors"
+      }
+    },
+    {
+      "url": "https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+      "probe": "https://basemaps.cartocdn.com/rastertiles/voyager/16/54895/27298.png",
+      "options": {
+        "maxZoom": 19,
+        "attribution": "<a href=\"https://www.openstreetmap.org/copyright\">&copy; OpenStreetMap</a> contributors, <a href=\"https://carto.com/attributions\">&copy; CARTO</a>"
+      }
+    },
+    {
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+      "probe": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/16/27298/54895",
+      "options": {
+        "maxZoom": 19,
+        "maxNativeZoom": 18,
+        "attribution": "Tiles <a href=\"https://www.esri.com/en-us/legal/copyright-trademarks\">&copy; Esri</a> &mdash; Esri, HERE, Garmin, <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+      }
+    }
+  ]
+}
